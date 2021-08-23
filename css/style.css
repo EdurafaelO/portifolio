@@ -1,0 +1,305 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.menuGeral{
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(45deg,#030a20, #030a20, #141E61, #69e1ff, #030a20 );
+    background-size: 300% 300%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: colors 15s ease infinite;
+    position: absolute;
+
+}
+.texto{
+    border: 3px solid #fff;
+    padding: 5px 35px;
+}
+.nome{
+    color: #fff;
+    font-size: 35px;
+    font-family: 'MontSerrat', sans-serif;
+
+}
+.sobrenome{
+    color: #3f6dd5;
+    font-size: 35px;
+    margin-left: 45px;
+    font-family: 'MontSerrat', sans-serif;
+
+}
+.linha{
+    background-color: #fff;
+    height: 1px;
+    width: 93%;
+    display: inline-block;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.textoMenu{
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 15px;
+    font-style: italic;
+    font-family: 'MontSerrat', sans-serif;
+    font-size: 13px;
+}
+.textoMenu2{
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    font-style: italic;
+    margin-top: 250px;
+    margin-left: 15px;
+    font-family: 'MontSerrat', sans-serif;
+    font-size: 13px;
+}
+.btn{
+    display: block;
+    margin-top: 350px;
+    box-shadow: black 1px 3px 10px;
+    font-family: 'MontSerrat', sans-serif;
+}
+.navBar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.linguagens{
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(45deg,#141E61, #030a20, #030a20);
+    background-size:100% 200%;
+    background-repeat: repeat;
+    margin-top: 50px;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.linguagens img{
+    width: 50px;
+    height: 50px;
+    margin-left: 75px;
+    margin-right: 15px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    border-radius: 25px;
+
+}
+.linguagens p{
+    width: 100%;
+    color: #fff;
+    font-family: 'MontSerrat', sans-serif;
+    font-size: 20px;
+    padding: 5px;
+    font-style: italic;
+    margin-right: 0px;
+}
+.borda{
+    border:2px solid #5e5e5e;
+    border-radius: 10px;
+}
+.sobreMim{
+    width: 100%;
+    height: auto;
+    background-color: #dbdbdb;
+    padding: 20px;
+}
+.sobreMim h1{
+    font-size: 30px;
+}
+.sobreMim p{
+    text-align: justify;
+    font-size: 18px;
+    padding: 10px 40px;
+}
+.entreContato{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.entreContato h3{
+    float: left;
+}
+.entreContato img{
+    width: 40px;
+    height: 40px;
+    float: right;
+    border: 2px solid #fff;
+    background-color: #fff;
+    border-radius: 25px;
+    margin-left: 205px;
+
+}
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input{
+    width: 45%;
+    margin-left:10px;
+    padding: 5px;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+.inputMensagem{
+    width: 95%;
+    margin-left:10px;
+    border-radius: 8px;
+    margin-top: 15px;
+    height: 100px;
+}
+.formulario .btnEnvia{
+    margin-left: 10px;
+    padding: 10px 5px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-family: 'MontSerrat', sans-serif;
+    float: center;
+}
+.rodape{
+    width: 100%;
+    background-color: #030a20;
+    color:#fff;
+    font-family: 'MontSerrat', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    text-align: center;
+    height: 25px;
+}
+.scroll{
+    width:40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #030a20;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    cursor: pointer;
+    display: none;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 33px;
+}
+@media only screen and (min-width:1000px) {
+    .menuGeral{
+        height: 400px;
+    }
+    .textoMenu{
+        font-size: 15px;
+    }
+    .textoMenu2{
+        font-size: 15px;
+        margin-top: 350px;
+    }
+    .btn{
+        margin-top: 490px;
+    }  
+    .navBar{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .linguagens{
+        width: 100%;
+        display: block;
+        margin-top: 90px;
+    }
+    .linguagens img{
+        width: 40px;
+        height: 40px;
+        margin-left: 90px;
+        margin-top: 20px;
+        border: 2px solid #fff;
+        background-color: #fff;
+        border-radius: 20px;
+        float: left;
+    
+    }
+    .linguagens p{
+        margin-left: 10px;
+        width: 100%;
+        color: #fff;
+        font-family: 'MontSerrat', sans-serif;
+        font-size: 20px;
+        padding: 5px;
+        font-style: italic;
+    }
+    .container{
+        display: flex;
+    }
+    .div1{
+        flex: 1;
+    }
+    .div2{
+        flex: 1;
+    }
+    .entreContato h3{
+        font-size: 20px;
+        width: 40%;
+    }
+    .borda{
+        width: 50%;
+        margin-left: 25%;
+    }
+    .formulario{
+        display: block;
+
+    }
+}
+
+@media only screen and (max-width:557px) {
+    .linguagens img{
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+        margin-left: 10px;
+        margin-top: 20px;
+        border: 2px solid #fff;
+        background-color: #fff;
+        float: left;
+    }
+    .entreContato h3{
+        font-size: 20px;
+    }
+    .entreContato img{
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        margin-left: 30px;
+        margin-top: 20px;
+        border: 2px solid #fff;
+        background-color: #fff;
+        float: left;
+    }
+}
+
+@keyframes colors {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
