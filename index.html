@@ -17,23 +17,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"></script>
     <!-- CHAMADA JQUERY -->
     <script src="js/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
 </head>
 <body>
     <header class="header">
         <div class="nav">
             <div class="nav-bar">
                 <ul>
-                    <li>
+                    <li class="link-menu">
                         <a href="#">Início</a>
                     </li>
-                    <li>
-                        <a href="#">Sobre</a>
+                    <li class="link-menu">
+                        <a href="#about">Sobre</a>
                     </li>
-                    <li>
-                        <a href="#">Tecnologias</a>
+                    <li class="link-menu">
+                        <a href="#techonolgy">Tecnologias</a>
                     </li>
-                    <li>
-                        <a href="#">Currículo</a>
+                    <li class="link-menu">
+                        <a href="arquivos/curriculo.pdf" download="Curriculo_Eduardo_Oliveira" target="_blank">Currículo</a>
+                    </li>
+                    <li class="link-menu">
+                        <a href="#contact">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -46,9 +52,14 @@
                         <a href="https://api.whatsapp.com/send/?phone=51999405523&text=Olá, vim através do seu portfólio na web!" target="_blank" class="socail-whatsapp"><i class="fa-brands fa-whatsapp" style="font-size: 18px; margin: 0;"></i></a>
                     </li>
                     <li>
-                        <a href="#" target="_blank" class="socail-linkedin"><i class="fa-brands fa-linkedin-in" style="font-size: 18px; margin: 0;"></i></a>
+                        <a href="https://www.linkedin.com/in/eduardo-de-oliveira-1465211b5/" target="_blank" class="socail-linkedin"><i class="fa-brands fa-linkedin-in" style="font-size: 18px; margin: 0;"></i></a>
                     </li>
                 </ul>
+            </div>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
         </div>
         <div class="content-header">
@@ -57,8 +68,8 @@
                 <span class="subtitle-header">Trabalho como desenvolvedor de sites para web!</span>
     
                 <div class="buttons-header">
-                    <button>Ver currículo</button>
-                    <button>Entrar em contato</button>
+                    <button><a href="arquivos/curriculo.pdf" download="Curriculo_Eduardo_Oliveira">Ver currículo</a></button>
+                    <button><a href="#contact">Entrar em contato</a></button>
                 </div>
             </div>
             <div class="marcador-header">
@@ -70,16 +81,145 @@
     </header>
     <section id="about" class="about">
         <div class="d-flex align-center justify-center">
-            <div class="col-6">
-                <img src="images/header/programming.svg"/>
+            <div class="col-6 d-flex align-center justify-center">
+                <img class="svg_about" src="images/header/programming.svg"/>
             </div>
             <div class="col-6 text-center">
-                <h2 class="title">Quem é Eduardo de Oliveira?</h2>
+                <h1 class="title">Quem é Eduardo de Oliveira?</h1>
+
+                <p class="text pt-4">Assim como todo mundo, tenho metas e objetivos em minha vida, tenho sonhos que ainda quero realizar. Amo viajar e gostaria de conhecer diversos lugares pelo mundo inteiro, quero construir minha família e continuar sendo muito feliz. São coisas simples, mas que pra mim são importantes, bem como minha carreira profissional.</p>
+                <p class="text">Atualmente trabalho como desenvolvedor web front-end e me encontrei nessa área é com isso que quero continuar a trabalhar e continuo estudando para cada vez me tornar um profissional mais capacitado já que a tecnologia evoluí em um piscar de olhos.</p>
             </div>
         </div>
     </section>
+    <section id="techonolgy" class="techonolgy">
+        <div class="container">
+            <div class="col-12">
+                <h1 class="title">Tecnologias</h1>
+                <div class="marker"></div>
+            </div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="col-12">
+                        <div class="card">
+                            <img src="images/carousel/html.png" style="width: 100%;">
+                            <div class="card-body">
+                                <p>HTML é uma linguagem de marcação utilizada na construção de páginas na Web. As tags em HTML nos permite criar elementos na página web, desde mostrar uma imagem ou exibir um simples texto até criar formulários de contato e blocos de elementos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="col-12">
+                        <div class="card">
+                            <img src="images/carousel/javascript.jpg" style="width: 100%;">
+                            <div class="card-body">
+                                <p>JavaScript é uma linguagem de programação interpretada estruturada, permitindo que façamos animações e que seja aplicada várias funcionalidades em seu site, está entre uma das linguagens de programação mais utilizadas do mundo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="col-12">
+                        <div class="card">
+                            <img src="images/carousel/css.png" style="width: 100%;">
+                            <div class="card-body">
+                                <p>CSS é um mecanismo para adicionar estilo a um documento web, ou seja, com ele mudamos cores, formas, tamanho de elementos entre muitas outras estilizações da página. Além de ser o responsável por adptações para versões mobile.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="col-12">
+                        <div class="card">
+                            <img src="images/carousel/react.png" style="width: 100%;">
+                            <div class="card-body">
+                                <p>O React é uma biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web. Fazendo com que as interfaces possam ser muito mais interativas, estilizadas e otimizadas para melhor performance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 div-img d-flex align-center justify-center">
+                    <img src="images/contact/contact.svg"/>
+                </div>
+                <div class="col-6 div-form">
+                    <div class="col-12">
+                        <h1 class="title">Contate-me</h1>
+                        <div class="marker"></div>
+                    </div>
+                    <div class="col-12">
+                        <form id="contact_form" action="">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="col-12">
+                                        <label>Nome</label>
+                                    </div>
+                                    <div class="col-12 d-flex align-center justify-center">
+                                        <input type="text" placeholder="Informe seu nome" name="name" id="name" required/>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="col-12">
+                                        <label>Telefone</label>
+                                    </div>
+                                    <div class="col-12 d-flex align-center justify-center">
+                                        <input type="text" placeholder="Informe seu telefone" name="phone" id="phone" required/>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="col-12">
+                                        <label>E-mail</label>
+                                    </div>
+                                    <div class="col-12 d-flex align-center justify-center">
+                                        <input type="text" placeholder="Informe seu e-mail" name="email" id="email" required/>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="col-12">
+                                        <label>Empresa</label>
+                                    </div>
+                                    <div class="col-12 d-flex align-center justify-center">
+                                        <input type="text" placeholder="Informe sua empresa" name="company" id="company" required/>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="col-12">
+                                        <label>Mensagem</label>
+                                    </div>
+                                    <div class="col-12 d-flex align-center justify-center">
+                                        <textarea name="message" id="message" rows="2" placeholder="Informe sua mensagem" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex align-center justify-center">
+                                    <button type="submit" class="btn-envia">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex align-center justify-center">
+                    <span>© Todos os direitos reservados. Powered by <span class="mark">Eduardo Oliveira</span></span>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-
+    <script src="js/main.js"></script>
+    <script src="js/mobile-menu.js"></script>
 </body>
 </html>
